@@ -1,7 +1,6 @@
 
 
-.headerid {display:flex;
-    flex-direction: row;
+.headerid {
     width:120%;
     font-family:arial,sans-serif;
     font-size:13px;
@@ -62,6 +61,7 @@ body {font-family:arial,sans-serif;
 
 .links-r li {padding-left:20px;}
 
+
 #gridicon {position:fixed;
             top:0;
             right:0;
@@ -69,31 +69,29 @@ body {font-family:arial,sans-serif;
             padding-right:105px;
             width:25px;}
 
-#main{margin-left:160px;
-      margin-right:600px;
+#main{display:flex;
+    flex-direction: column;
+    margin-left:160px;
+      margin-right:1100px;
       margin-top:110px;
-      margin-bottom:150px;
-      display:flex;
-      flex-direction: column;}
+      margin-bottom:150px;}
 
-@media (max-width:750px) {
-    #main {margin-right:50px;}
-}
-
-@media (max-width:1300px) {
+@media (max-width:300px) {
     #main {margin-right:100px;}
 }
 
-@media (max-width:750px) {
-    .navbar {margin-right:0px;}
+@media (max-width:1700px) {
+    #main {margin-right:800px;}
 }
+
+@media (max-width:1300px) {#main {margin-right:500px;}}
 
 
 
 h1 {color: #1a0dab;
     padding-bottom:0px;
     margin-bottom:4px;
-    margin-top:40px;
+    margin-top:30px;
     font-weight: lighter;}
 h1 a {text-decoration: none;
     color: #1a0dab;}
@@ -108,10 +106,24 @@ h1 a:hover {text-decoration: underline;}
                 font-weight: lighter;}
 .result-text {margin-top:0px;
     font-weight: lighter;}
+    
+    
+                
+.video-table, tr, td {border:1px solid #dfe1e5}   
+.chevron {width:6%;}
+.table tr, td{
+                text-align: left;
+                padding-bottom: 5px;
+                padding-top:5px;}
 
-    table, th, td, tbody {
-        border: 1px solid black;
-      }
+
+.table {margin-top:20px;
+        }
+
+
+.related td, th, a {border:none;
+                    text-decoration: none;}
+
 
 #googlelogo{position:fixed;
     margin-top:25px;
